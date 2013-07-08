@@ -1,0 +1,17 @@
+application: log-test
+version: test
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: webob
+  version: latest
+- name: jinja2
+  version: 2.6
+
+handlers:
+- url: .*
+  script: main.app
+  login: admin
+

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Log Data Test Config</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <label for="line_bytes">Bytes Per Line</label>
+        <input id="line_bytes" name="line_bytes" type="number" min=100 step=100 value=100>
+        <br>
+
+        <label for="line_count">Lines Per Task</label>
+        <input id="line_count" name="line_count" type="number" min=100 step=10 value=500>
+        <br>
+
+        <label for="flush_count">Flush Every XX Lines</label>
+        <input id="flush_count" name="flush_count" type="number" min=10 step=10 value=100>
+        <br>
+
+        <label for="entity_count">Put XX entities at the end of request</label>
+        <input id="entity_count" name="entity_count" type="number" min=10 step=10 value=100>
+        <br>
+      </fieldset>
+
+      <button type="submit" value="Run Test">Run Test</button>
+    </form>
